@@ -3,7 +3,7 @@
 function rollD6() {
   const min = 1;
   const max = 7;
-  const roll = Math.floor(Math.random() * (max - min) + min);
+  const roll = Math.ceil(Math.random() * (max - min));
 
   // No need to alter the rest of this function!
 
@@ -22,7 +22,7 @@ function rollD6() {
 function rollD12() {
   const min = 1;
   const max = 13;
-  const roll = Math.floor(Math.random() * (max - min) + min);
+  const roll = Math.ceil(Math.random() * (max - min));
 
   // No need to alter the rest of this function!
 
@@ -40,8 +40,8 @@ function rollD12() {
 // 20-sided die.
 function rollD20() {
   const min = 1;
-  const max = 20;
-  const roll = Math.floor(Math.random() * (max - min) + min);
+  const max = 21;
+  const roll = Math.ceil(Math.random() * (max - min));
 
   // No need to alter the rest of this function!
 
@@ -60,8 +60,8 @@ function rollD20() {
 function rollDoubleD6() {
   const min = 1;
   const max = 7;
-  const roll1 = Math.floor(Math.random() * (max - min) + min);
-  const roll2 = Math.floor(Math.random() * (max - min) + min);
+  const roll1 = Math.ceil(Math.random() * (max));
+  const roll2 = Math.ceil(Math.random() * (max));
 
   // No need to alter the rest of this function!
 
